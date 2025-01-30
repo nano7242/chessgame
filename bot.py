@@ -1,10 +1,13 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, ContextTypes
 
+# Ссылка на страницу с игрой на GitHub Pages
+url = 'https://nano7242.github.io/chessgame/index.html'
+
 # Функция обработчика команды /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     keyboard = [
-        [InlineKeyboardButton("Играть", url='https://ваш_репозиторий.github.io/your_project/index.html')]
+        [InlineKeyboardButton("Играть", url=url)]  # Здесь подставляем правильную ссылку
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
