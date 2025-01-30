@@ -1,0 +1,3 @@
+[submodule "ton-connect-project/ton-chess-project/telegram_project/new-chessgame"]
+    path = ton-connect-project/ton-chess-project/telegram_project/new-chessgame
+    url = https://github.com/nano7242/chessgame.git
